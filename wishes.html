@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Birthday Wishes for Aazan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="wishes.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to top right, #ffecd2 0%, #fcb69f 100%);
+            text-align: center;
+            color: #333;
+        }
+        .container {
+            padding: 50px 20px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #d43f8d;
+        }
+        .message-box {
+            margin: 30px auto;
+            max-width: 600px;
+            background: white;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .surprise {
+            margin-top: 20px;
+            display: none;
+            font-weight: bold;
+            color: #d43f8d;
+            font-size: 1.2rem;
+        }
+        button {
+            padding: 10px 20px;
+            background: #ff5e78;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #ff3d5a;
+        }
+        .image-gallery {
+            margin-top: 40px;
+        }
+        .image-gallery img {
+            width: 200px;
+            margin: 10px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🎉 Happy Birthday Aazan! 🎉</h1>
+    <div class="message-box">
+        <p>Wishing you a day filled with love, laughter, and everything that brings you joy.</p>
+        <p>You are not just a best friend, you are family. I’m lucky to have you in my life.</p>
+
+        <button onclick="document.getElementById('surprise').style.display='block';">Click for a Surprise 🎁</button>
+        <div id="surprise" class="surprise">
+            You're amazing, Aazan! Never forget how awesome you are. Here's to another year of greatness! ❤️
+        </div>
+    </div>
+
+    <div class="image-gallery">
+        <!-- Add image tags when images are available -->
+        <!-- Example: <img src="images/aazan1.jpg" alt="Aazan"> -->
+        <p>More memories coming soon...</p>
+    </div>
+</div>
+
+<!-- Confetti script -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+<script>
+    // Launch confetti on page load
+    window.onload = () => {
+        confetti({
+            particleCount: 100,
+            spread: 70,
+            origin: { y: 0.6 }
+        });
+    };
+</script>
+
+</body>
+</html>
